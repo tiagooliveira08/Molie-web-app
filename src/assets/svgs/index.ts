@@ -1,3 +1,4 @@
-import { ReactComponent as BannerInitial } from "./banner-initial.svg";
+import { ReactComponent as Star } from "./star.svg";
+import { ReactComponent as Logo } from "./logo.svg";
 
-export { BannerInitial };
+export { Star, Logo };

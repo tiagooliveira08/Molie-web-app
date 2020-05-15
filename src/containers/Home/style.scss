@@ -1,5 +1,36 @@
 .home {
+  .containerImage {
+    margin: 0 -8px;
+  }
+  .containerLogo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+  }
   img {
     width: 100%;
+  }
+  .title {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .subtitle {
+    margin-top: 21px;
+  }
+  .footerContainer {
+    margin-top: 58px;
+    display: flex;
+    justify-content: center;
+    .createAccountBtn {
+      display: block;
+      margin-top: 15px;
+      color: #fe9ecc;
+    }
   }
 }
