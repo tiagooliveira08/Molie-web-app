@@ -1,4 +1,4 @@
-import { Home } from "./Home";
-import { Login } from "./Login";
+import { Presentation } from "./Presentation";
+import { Routes } from "./Routes";
 
-export { Home, Login };
+export { Presentation, Routes };

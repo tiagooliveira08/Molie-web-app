@@ -1,8 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "reset-css";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 
 import { App } from "./App";
-import "assets/styles/global.scss";
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(
+  <HashRouter>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </HashRouter>,
+  document.getElementById("app")
+);

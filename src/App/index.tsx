@@ -1,12 +1,20 @@
 import React from "react";
-import { Home } from "containers";
+import { Routes } from "containers";
+import { MuiThemeProvider } from "@material-ui/core";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { theme } from "theme";
 
-import s from "./style.scss";
+import { useStyles } from "./style";
 
-export const App = () => {
+export function App() {
+  const s = useStyles();
+
   return (
-    <div className={s.main}>
-      <Home />
-    </div>
+    <MuiThemeProvider theme={theme}>
+      <CssBaseline />
+      <div className={s.main}>
+        <Routes />
+      </div>
+    </MuiThemeProvider>
   );
-};
+}

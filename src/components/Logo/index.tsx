@@ -1,6 +1,13 @@
 import React from "react";
-import s from "./style.scss";
+import { NavLink } from "react-router-dom";
+import { useStyle } from "./style";
 
 export function Logo() {
-  return <h1 className={s.logo}>Molie</h1>;
+  const s = useStyle();
+
+  return (
+    <NavLink to="/" className={s.link}>
+      <h1 className={s.logo}>Molie</h1>
+    </NavLink>
+  );
 }
