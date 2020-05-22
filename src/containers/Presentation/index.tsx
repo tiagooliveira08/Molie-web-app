@@ -12,6 +12,7 @@ export function Presentation() {
   const s = useStyles();
   const location = useLocation();
 
+  console.log(location.pathname);
   return (
     <>
       <div className={s.containerImage}>
@@ -21,7 +22,7 @@ export function Presentation() {
         </div>
         <img src={bannerInitial} className={s.banner} />
       </div>
-      {location.pathname === "/login" ? <Login /> : <Welcome />}
+      {location.pathname === "/apresentacao/entrar" ? <Login /> : <Welcome />}
     </>
   );
 }

@@ -16,4 +16,18 @@ export const theme = createMuiTheme({
       fontFamily: "Nunito",
     },
   },
+  overrides: {
+    MuiFilledInput: {
+      root: {},
+    },
+  },
+  props: {
+    MuiTextField: {
+      variant: "outlined",
+    },
+    MuiButton: {
+      variant: "contained",
+      color: "primary",
+    },
+  },
 });

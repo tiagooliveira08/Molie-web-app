@@ -15,14 +15,14 @@ export function Welcome() {
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
       <div className={s.footerContainer}>
-        <Link to="/login">
+        <Link to="/apresentacao/entrar">
           <Button variant="contained" color="primary" className={s.btn}>
             Fazer login
           </Button>
         </Link>
         <span className={s.createAccountMessage}>
           Não tem uma conta?{" "}
-          <Button className={s.createAccountBtn} color="secondary">
+          <Button className={s.createAccountBtn} variant="text">
             Criar conta
           </Button>
         </span>

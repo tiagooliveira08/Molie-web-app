@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core";
 export const useStyles = makeStyles((theme) => ({
   containerImage: {
     margin: theme.spacing(0, -1),
+    height: "353px",
   },
   containerLogo: {
     position: "absolute",
