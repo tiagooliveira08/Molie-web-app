@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Routes } from "containers";
 import { MuiThemeProvider } from "@material-ui/core";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -11,10 +11,12 @@ export function App() {
 
   return (
     <MuiThemeProvider theme={theme}>
-      <CssBaseline />
-      <div className={s.main}>
-        <Routes />
-      </div>
+      <Suspense fallback={null}>
+        <CssBaseline />
+        <div className={s.main}>
+          <Routes />
+        </div>
+      </Suspense>
     </MuiThemeProvider>
   );
 }

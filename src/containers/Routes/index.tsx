@@ -1,6 +1,9 @@
-import React from "react";
+import React, { lazy } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import { Presentation } from "containers";
+
+const Presentation = lazy(() =>
+  import("containers").then((module) => ({ default: module.Presentation }))
+);
 
 export function Routes() {
   return (
