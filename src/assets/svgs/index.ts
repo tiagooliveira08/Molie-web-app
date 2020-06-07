@@ -1,4 +1,4 @@
-import { ReactComponent as Star } from "./star.svg";
-import { ReactComponent as Logo } from "./logo.svg";
+import { Star } from "./Star";
+import { Logo } from "./Logo";
 
 export { Star, Logo };

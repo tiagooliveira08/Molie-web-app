@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
-import { Routes } from "containers";
+import { Routes } from "./../containers";
 import { MuiThemeProvider } from "@material-ui/core";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { theme } from "theme";
+import { theme } from "./../theme";
 
 import { useStyles } from "./style";
 

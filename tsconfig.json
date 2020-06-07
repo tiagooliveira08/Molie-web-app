@@ -1,25 +1,15 @@
 {
+  "include": ["src", "types"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["DOM", "ESNext"],
-    "sourceMap": true,
-    "noEmit": true,
-    "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "jsx": "react",
-    "declaration": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "experimentalDecorators": true,
-    "incremental": false,
-    "baseUrl": "src/",
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+    "moduleResolution": "Node",
+    // You can't currently define paths in your 'extends' config,
+    // so we have to set 'baseUrl' & 'paths' here.
+    // Don't change these unless you know what you're doing.
+    // See: https://github.com/microsoft/TypeScript/issues/25430
+    "baseUrl": "./",
+    "paths": { "*": ["web_modules/.types/*"] }
+    // Feel free to add/edit new config options below:
+    // ...
+  }
 }

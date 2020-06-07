@@ -1,8 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import bannerInitial from "assets/images/banner-initial.png";
-import { Logo } from "components/Logo";
-import { Star } from "assets/svgs";
+import bannerInitial from "./../../assets/images/banner-initial.png";
+import { Logo } from "./../../components/Logo";
+import { Star } from "./../../assets/svgs";
 import { Login } from "./Login";
 import { Welcome } from "./Welcome";
 

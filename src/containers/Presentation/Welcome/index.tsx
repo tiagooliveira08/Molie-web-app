@@ -1,16 +1,16 @@
 import React from "react";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
-
-import s from "./style.scss";
+import { useStyles } from "./style";
 
 export function Welcome() {
+  const s = useStyles();
   return (
-    <div className={s.welcome}>
+    <div>
       <h1 className={s.title}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </h1>
-      <p className={s.subtitle}>
+      <p className={s.subTitle}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
